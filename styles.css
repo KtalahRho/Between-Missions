@@ -1,0 +1,253 @@
+/* styles.css */
+
+/* Basic reset for better cross-browser compatibility */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the body */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Change font to a more elegant one */
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #edc88e; /* Light grey background to contrast with the dark wood texture */
+}
+
+/* Header styling */
+header {
+    background: #36230e; /* Dark wood-like background color */
+    color: #edc88e; /* Light text color */
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Brush Script MT', cursive; /* Script font for a personal touch */
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    max-width: 20px;
+    height: 30px;
+    padding-bottom: 05px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #edc88e;
+    font-weight: bold;
+    font-size: large;
+}
+
+.nav-links a:hover {
+    color: #f0f0f0;
+}
+
+.nav-links1 {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 05px;
+}
+
+.nav-links1 li {
+    margin-left: 30px;
+    margin-bottom: 05px;
+}
+
+.nav-links1 a {
+    text-decoration: none;
+    color: #edc88e;
+    font-weight: bold;
+    font-size: large;
+}
+
+.nav-links1 a:hover {
+    color: #f0f0f0;
+}
+
+/* Styling for pagination controls */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    color: #36230e; /* Dark wood-like color */
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: 1px solid #36230e;
+    border-radius: 5px;
+    background-color: #f4efe9; /* Light beige */
+    transition: background-color 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #d3b899; /* Slightly darker beige on hover */
+}
+
+.page-numbers {
+    margin: 0 15px;
+    font-size: 16px;
+    color: #36230e;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows for wrapping of blog posts */
+    gap: 20px; /* Space between blog posts */
+    justify-content: center; /* Center blog posts */
+    margin-bottom: 40px; /* Adds space below blog posts before pagination */
+}
+
+.post {
+    background-color: #fff; /* White background for blog post */
+    padding: 15px; /* Padding inside the blog post */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow around the blog post */
+    max-width: 640px; /* Controls the size of each blog post preview */
+    width: 100%; /* Responsive width */
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.post h3 {
+    font-size: 1.5rem; /* Larger title for the blog post */
+    margin: 10px 0;
+    color: #36230e; /* Dark wood-like color for the title */
+}
+
+.post p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #36230e;
+}
+
+/* Change blog post preview title color */
+.post h3 a {
+    color: #36230e; /* Change this to your preferred color */
+    text-decoration: none; /* Removes the underline */
+}
+
+.post h3 a:hover {
+    color: #4a4a4a; /* Optional: Change hover color */
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+/* Styling for the list (bullet points) */
+ul {
+    list-style-position: inside; /* Moves the bullet inside the text boundary */
+    margin-left: 20px; /* Adjust this value for further left or right movement */
+    padding: 0;
+}
+
+/* Styling for individual list items */
+ul li {
+    text-align: left; /* Ensure text inside the bullet point stays left-aligned */
+    padding-left: 10px; /* Creates some space between the bullet and the text */
+}
+
+/* Main content styling */
+main {
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #36230e; /* Dark wood-like color */
+    border-bottom: 2px solid #36230e;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Video and blog section */
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows for wrapping of blog posts */
+    gap: 20px; /* Space between blog posts */
+    justify-content: center; /* Center blog posts */
+    margin-bottom: 40px; /* Adds space below blog posts before pagination */
+}
+
+.video {
+    max-width: 640px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.video iframe {
+    width: 100%; /* Makes the video responsive */
+    height: 360px; /* Adjust height to maintain aspect ratio */
+}
+
+.video p {
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #36230e; /* Dark wood-like color for the text */
+}
+
+/* Links section */
+#links ul {
+    list-style: none;
+}
+
+#links ul li {
+    margin-bottom: 10px;
+}
+
+#links ul li a {
+    color: #36230e; /* Dark wood-like color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+footer {
+    background: #36230e; /* Dark wood-like background color */
+    color: #edc88e; /* Light text color */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
