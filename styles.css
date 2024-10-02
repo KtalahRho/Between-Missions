@@ -243,6 +243,70 @@ h2 {
     text-decoration: underline;
 }
 
+/* Mobile responsive navigation */
+nav ul {
+    flex-wrap: wrap; /* Allow menu items to wrap on smaller screens */
+    justify-content: center; /* Center the navigation links */
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links1 {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links1 li {
+        margin: 10px 0; /* Add margin between menu items on smaller screens */
+    }
+
+    /* Adjust the container padding/margins */
+    body {
+        padding: 10px;
+    }
+
+    /* Ensure the main content does not overflow */
+    main {
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* Adjust blog posts and videos */
+    .blog-container, .video-container {
+        flex-direction: column;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: auto; /* Let the height auto-adjust */
+    }
+}
+
+/* Prevent overflow on mobile */
+html, body {
+    overflow-x: hidden;
+}
+
+section {
+    width: 100%;
+}
+
+/* Responsive design for blog posts and videos */
+@media screen and (max-width: 768px) {
+    .post, .video {
+        width: 100%; /* Make posts and videos take full width on mobile */
+        max-width: none; /* Disable the max-width restriction */
+    }
+
+    .post img, .video iframe {
+        width: 100%; /* Ensure images and videos take full width */
+        height: auto;
+    }
+
+    .blog-container, .video-container {
+        gap: 10px; /* Reduce the gap between elements for smaller screens */
+    }
+}
+
 /* Footer styling */
 footer {
     background: #36230e; /* Dark wood-like background color */
