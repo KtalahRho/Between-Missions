@@ -307,6 +307,37 @@ section {
     }
 }
 
+/* Responsive navigation adjustments */
+@media screen and (max-width: 768px) {
+    /* Reduce font size for navigation links on smaller screens */
+    .nav-links1 a {
+        font-size: medium; /* Adjust to a smaller size */
+    }
+
+    /* Adjust padding and margin to fit links in one line */
+    .nav-links1 li {
+        margin: 0 10px; /* Reduce the space between items */
+    }
+
+    /* Make sure the navigation stays as a flexbox in one line */
+    .nav-links1 {
+        display: flex;
+        justify-content: space-around; /* Distribute the links evenly */
+        flex-wrap: nowrap; /* Prevent wrapping */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .nav-links1 a {
+        font-size: small; /* Reduce the font size even more */
+    }
+
+    .nav-links1 li {
+        margin: 0 5px; /* Further reduce space between items */
+    }
+}
+
 /* Footer styling */
 footer {
     background: #36230e; /* Dark wood-like background color */
